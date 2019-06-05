@@ -20,9 +20,6 @@
             padding: 0px;
             overflow-x: hidden;
         }
-        
-        #Container {
-        }
 
         h3, h4 {
             margin: 10px 0 30px 0;
@@ -63,7 +60,8 @@
                 display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
             }
         }
-
+        
+            
         .bg-1 {
             background: #2d2d30;
             color: #bdbdbd;
@@ -142,12 +140,17 @@
             border: 0;
             font-size: 11px !important;
             letter-spacing: 4px;
-            opacity: 0.9;
+            border-bottom: solid white 4px;
+
         }
 
             .navbar li a, .navbar .navbar-brand {
                 color: #d5d5d5 !important;
             }
+
+        .brand-img {
+            width: 29%;
+        }
 
         .navbar-nav li a:hover {
             color: #fff !important;
@@ -157,6 +160,19 @@
             color: #fff !important;
             background-color: #29292c !important;
         }
+
+        /* .navbar-right {
+            font-size: 2em;
+        }
+            .navbar-right li {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .middle-nav {
+                border-left: solid white 1px;
+                border-right: solid white 1px;
+            } */
 
         .navbar-default .navbar-toggle {
             border-color: transparent;
@@ -244,7 +260,7 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -252,15 +268,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#myPage">Space Donkey and the Moonbouncers</a>
-                <!-- <a class="navbar-brand" href="#myPage"><img src="imagesSDMB/logoWhite.PNG" alt="Space Donkey and the Moonbouncers"></a>-->
+                <!-- <a class="navbar-brand" href="#myPage">Space Donkey and the Moonbouncers</a> -->
+                <a class="navbar-brand" href="#myPage"><img class="brand-img" src="imagesSDMB/logoWhite.PNG" alt="Space Donkey and the Moonbouncers"></a>
             </div>           
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#myPage">HOME</a></li>
-                    <li><a href="#theBand">THE BAND</a></li>
-                    <li><a href="#schedule">SHOWS</a></li>
-                    <li><a href="#music">MUSIC</a></li>
+                    <li class = "middle-nav"><a href="#theBand">THE BAND</a></li>
+                    <li class = "middle-nav"><a href="#schedule">SHOWS</a></li>
+                    <li class = "middle-nav"><a href="#music">MUSIC</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <!--<li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
